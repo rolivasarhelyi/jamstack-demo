@@ -1,5 +1,5 @@
 function success(pos) {
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${pos.coords.latitude}&lon=${pos.coords.longitude}&appid=${WEATHER_API_KEY}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${pos.coords.latitude}&lon=${pos.coords.longitude}&appid=${process.env.WEATHER_API_KEY}`;
 
   let crd = pos.coords;
 
